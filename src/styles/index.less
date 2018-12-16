@@ -1,0 +1,62 @@
+.project-list {
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto;
+
+    &__search-filed {
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 3px 10px;
+        width: 100%;
+    }
+
+    &__project-wrapper {
+        margin-bottom: 20px;
+    }
+
+    &__project {
+        padding: 5px;
+        border-bottom: 1px solid grey;
+    }
+
+    &__project-checkbox {
+        padding: 3px 5px;
+    }
+
+    &__project-value {
+        padding: 3px 5px;
+        border: 1px solid transparent;
+        margin-right: 12px;
+
+        &:hover {
+            border: 1px dashed grey;
+        }
+
+        &_done {
+            color: grey;
+            font-style: italic;
+            text-decoration: line-through;
+        }
+    }
+
+    &__add-project-button {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid grey;
+        cursor: pointer;
+    }
+
+    &__remove-project {
+        font-family: Arial;
+        color: white;
+        background-color: grey;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        line-height: 14px;
+    }
+}

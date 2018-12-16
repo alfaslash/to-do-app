@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "alwaysStrict": true,
+        "downlevelIteration": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "./dist/js",
+        "target": "es5",
+        "sourceMap": true,
+        "lib": [
+            "dom",
+            "es2016",
+            "scripthost"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ToDo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "less": "3.9.0",
+    "webpack": "4.27.1",
+    "webpack-cli": "3.1.2",
+    "ts-loader": "5.3.1",
+    "typescript": "3.2.2"
+  },
+  "config": {
+    "webpack": "./node_modules/.bin/webpack",
+    "lessc": "./node_mudules/.bin/lessc"
+  },
+  "scripts": {
+    "less": "lessc ./src/styles/index.less ./dist/css/style.css",
+    "build": "webpack && npm run less",
+    "build:watch": "webpack --progress --watch"
+  },
+  "keywords": ["To-Do"],
+  "author": "alfaslash (Artem Roshko)",
+  "license": "MIT"
+}
