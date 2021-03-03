@@ -6,12 +6,12 @@ import { Controller } from "./Controller";
 export class Renderer {
     private controller: Controller;
     private projectsList: Array<ProjectModel>;
-    private rootEl: HTMLElement;
+    private rootElement: HTMLElement;
 
     constructor() {
         this.controller = new Controller(this.updateProjectList.bind(this));
         this.projectsList = DataStorage.getInstance().getStorage();
-        this.rootEl = document.getElementById(config.holderId);
+        this.rootElement = document.getElementById(config.holderId);
     }
 
     public render() {
@@ -22,8 +22,8 @@ export class Renderer {
             this.createNewProjectNode()
         );
 
-        this.rootEl.prepend(document.createElement('div'));
-        this.rootEl.children[0].appendChild(fragment);
+        this.rootElement.prepend(document.createElement('div'));
+        this.rootElement.children[0].appendChild(fragment);
     }
 
     private updateProjectList(dataSource: Array<ProjectModel> = this.projectsList) {
